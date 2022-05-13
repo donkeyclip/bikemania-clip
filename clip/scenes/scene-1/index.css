@@ -1,0 +1,63 @@
+* {
+    --backgroundColor: {{ initParams.styleSheet.backgroundColor }};
+    --backgroundTextColor: {{ initParams.styleSheet.backgroundTextColor }};
+    --color: {{ initParams.styleSheet.color }};
+    --hightlightColor: {{ initParams.styleSheet.hightlightColor }};
+    --imgUrl:url('{{ initParams.info.imgUrl }}');
+    /* 
+      This is an example of how to use MotorCortex's init params in css, using a css variable
+        if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+    */
+    margin: 0;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: var(--color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+  position: absolute;
+  top: 5%;
+  text-align: center;
+}
+
+.hightlight{
+  background-color: var(--hightlightColor);
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  left: 0%;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+  top: 50%;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  color: var( --backgroundColor);
+  opacity:0.08
+}
+
+.bgt{
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+  background-image: var(--imgUrl);
+  position: absolute;
+  background-size: cover;
+}
