@@ -17,12 +17,15 @@ const template = (index) => {
       info: `@initParams.slides[${index}]`,
     },
   });
+
   clip.addIncident(opacity(1, ".root", 1), 0);
   clip.addIncident(topMove("5%", ".title", 1000, "easeInOutQuint"), 0);
   clip.addIncident(leftMove("0%", ".bg", 3500), 0);
   clip.addIncident(leftMove("0%", ".hightlight", 1500, "easeInOutQuint"), 0);
-  clip.addIncident(leftMove("5%", ".image", 1500, "easeInOutQuint"), 500);
-  clip.addIncident(scaleBig(".logo", 500, [0.86, 0, 0.07, 1]), 1500);
+  clip.addIncident(leftMove("50%", ".image", 1500, "easeInOutQuint"), 500);
+  clip.addIncident(topMove("90%", ".logo", 1000, [0.86, 0, 0.07, 1]), 700);
+  clip.addIncident(leftMove("78%", ".subtitle", 1500, "easeInOutQuint"), 0);
+  clip.addIncident(topMove("68%", ".subtitle", 1500, "easeInOutQuint"), 0);
   clip.addIncident(opacity(0, ".root", 1), 4000);
   return clip;
 };

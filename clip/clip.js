@@ -3,6 +3,8 @@ import html from "./clip.html";
 import css from "!!raw-loader!./clip.css";
 import initParams from "./initParams";
 import scene1 from "./scenes/scene-1";
+import scene2 from "./scenes/scene-2";
+import scene3 from "./scenes/scene-3";
 import initParamsValidationRules from "./initParamsValidationRules";
 
 export const clip = new HTMLClip({
@@ -23,4 +25,8 @@ export const clip = new HTMLClip({
   ],
 });
 
-clip.addIncident(scene1(0), 0);
+// clip.addIncident(scene1(0), 0);
+// clip.addIncident(scene2(1), 4001);
+// clip.addIncident(scene1(2), 8000);
+// clip.addIncident(scene2(3), 12001);
+clip.addIncident(scene3(), 0);

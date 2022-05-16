@@ -5,6 +5,8 @@
     --hightlightColor: {{ initParams.styleSheet.hightlightColor }};
     --imgUrl:url('{{ initParams.info.imgUrl }}');
     --logoUrl:url('{{ initParams.info.logo }}');
+    --stipeColor: {{ initParams.styleSheet.stipe.color }};
+    --stipeBgColor: {{ initParams.styleSheet.stipe.background }};
     /* 
       This is an example of how to use MotorCortex's init params in css, using a css variable
         if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
@@ -20,72 +22,56 @@
   height: 100%;
   color: var(--color);
   font-family: 'Montserrat', sans-serif;
+  background-color: #83d1e9;
   opacity: 0;
 }
 
 .title{
-  position: absolute;
-  top: -100%;
-  text-align: center;
-
-}
-
-.hightlight{
-  background-color: var(--hightlightColor);
-  width: 600px;
-  height: 100px;
-  position: absolute;
-  left: 0%;
-  border-top-right-radius:50px;
-  border-bottom-right-radius:50px;
-  top: 50%;
-  left: -100%;
-}
-
-.bg {
-  position: relative;
-  white-space: nowrap;
-  z-index: -1;
-  color: var( --backgroundTextColor);
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.bg:nth-of-type(even){
-  left: -200%;
-}
-
-.bg:nth-of-type(odd){
-  left:120%
-}
-
-.bg-wrapper{
-  position:absolute;
-  height: 144%;
-  width: 100%;
+  width: 260px;
+  background-color: #76c25d;
+  color: #fff;
+  text-align: start;
+  padding-left: 30px;
+  height: 137px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transform: rotate(340deg);
+  justify-content: center;
+  align-items: center;
 }
 
-.image,.logo{
+.subtitle{
+  width: 260px;
+  background-color: #273783;
+  color: #fff;
+  text-align: start;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  height: 30px;
+    align-items: center;
+}
+
+.title,.subtitle{
+  position: relative;
+  left:-110%;
+}
+
+
+.text-wrapper{
+  width: 280px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.image{
   width: 400px;
   height: 300px;
-  background-image: var(--imgUrl);
-  position: absolute;
+  background-image: url(https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/mobileservices/petalmaps/img/new/petalmapsinterface1.png);
+  transform: translate(-50%,-50%);
+  top: 50%;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.image{
   left: -100%;
+  position: absolute;
 }
 
-.logo{
-  width: 100px;
-  height: 100px;
-  background-image: var(--logoUrl);
-  left:75%;
-  top:50%;
-  transform: scale(0);
-}
