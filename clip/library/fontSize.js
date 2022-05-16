@@ -1,9 +1,9 @@
 import { CSSEffect } from "@donkeyclip/motorcortex";
-export const fadeOut = (selector, duration, easing = "linear") =>
+export const fontSize = (value,selector, duration, easing = "linear") =>
   new CSSEffect(
     {
       animatedAttrs: {
-        opacity: 0,
+        fontSize: value,
       },
     },
     {

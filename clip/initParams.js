@@ -13,8 +13,8 @@ export default [
         {
           title: "KTM",
           subtitle: "gamogo",
-          imgUrl: "https://via.placeholder.com/300x300",
-          logo: "https://via.placeholder.com/300x300",
+          imgUrl: "https://storage.googleapis.com/www.taiwantradeshow.com.tw/product/202201/T-97599118.png",
+          logo: "https://motosymbol.com/wp-content/uploads/2021/02/KTM-Emblem.png",
         },
         {
           imgUrl: "https://via.placeholder.com/300x300",

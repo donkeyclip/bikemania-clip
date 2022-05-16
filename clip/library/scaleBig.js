@@ -4,12 +4,10 @@ export const scaleBig = (selector, duration, easing = "linear") =>
     {
       animatedAttrs: {
         transform: {
-          scale: 1.8,
+          scale: 1,
         },
       },
-      initialValues: {
-        opacity: 0,
-      },
+      
     },
     {
       selector,
