@@ -24,6 +24,7 @@
   font-family: 'Montserrat', sans-serif;
   background-color: #83d1e9;
   opacity: 0;
+  background-image: url('./assets/cta-bg.png');
 }
 
 .title{
@@ -61,12 +62,13 @@
   width: 280px;
   overflow: hidden;
   position: absolute;
+  top:12%
 }
 
 .image{
-  width: 400px;
-  height: 300px;
-  background-image: url(https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/mobileservices/petalmaps/img/new/petalmapsinterface1.png);
+  width: 165px;
+  height: 350px;
+  background-image: url("./assets/phone.png");
   transform: translate(-50%,-50%);
   top: 50%;
   background-size: contain;

@@ -76,6 +76,7 @@
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .image{
   left: -100%;
@@ -88,4 +89,5 @@
   left:75%;
   top:50%;
   transform: scale(0);
+  
 }

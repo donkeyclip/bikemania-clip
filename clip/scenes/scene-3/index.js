@@ -20,7 +20,7 @@ const template = () => {
 
   clip.addIncident(opacity(1, ".root", 1), 0);
   clip.addIncident(leftMove("0%", ".hightlight", 1500, "easeInOutQuint"), 0);
-  clip.addIncident(leftMove("40%", ".image", 1500, "easeInOutQuint"), 0);
+  clip.addIncident(leftMove("18%", ".image", 1500, "easeInOutQuint"), 0);
   clip.addIncident(
     leftMove("0%", ".subtitle,.title", 1500, "easeInOutQuint"),
     1500

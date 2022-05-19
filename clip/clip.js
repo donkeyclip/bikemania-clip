@@ -25,8 +25,8 @@ export const clip = new HTMLClip({
   ],
 });
 
-// clip.addIncident(scene1(0), 0);
-// clip.addIncident(scene2(1), 4001);
-// clip.addIncident(scene1(2), 8000);
-// clip.addIncident(scene2(3), 12001);
-clip.addIncident(scene3(), 0);
+clip.addIncident(scene1(0), 0);
+clip.addIncident(scene2(1), 4001);
+clip.addIncident(scene1(2), 8000);
+clip.addIncident(scene2(3), 12001);
+clip.addIncident(scene3(), 16001);
