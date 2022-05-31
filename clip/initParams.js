@@ -13,26 +13,30 @@ export default [
         {
           title: "KTM",
           subtitle: "Team 693",
-          imgUrl: "./assets/bike1.png",
+          imgUrl:
+            "https://donkeyclip.github.io/bikemania-clip/server/assets/bike1.png",
           logo: "https://motosymbol.com/wp-content/uploads/2021/02/KTM-Emblem.png",
         },
         {
-          imgUrl: "./assets/bike2.png",
+          imgUrl:
+            "https://donkeyclip.github.io/bikemania-clip/server/assets/bike2.png",
           title: "Bike Ahead Composites",
           subtitle: "BITURBO ROAD",
-          logo: "./assets/logo2.png",
+          logo: "https://donkeyclip.github.io/bikemania-clip/server/assets/logo2.png",
         },
         {
-          imgUrl: "./assets/bike3.png",
+          imgUrl:
+            "https://donkeyclip.github.io/bikemania-clip/server/assets/bike3.png",
           title: "Giant",
           subtitle: "Reign Advanced Pro",
-          logo: "./assets/logo3.png",
+          logo: "https://donkeyclip.github.io/bikemania-clip/server/assets/logo3.png",
         },
         {
-          imgUrl: "./assets/bike4.png",
+          imgUrl:
+            "https://donkeyclip.github.io/bikemania-clip/server/assets/bike4.png",
           title: "CANNONDALE",
           subtitle: "SUPERSIX EVO",
-          logo: "./assets/logo4.png",
+          logo: "https://donkeyclip.github.io/bikemania-clip/server/assets/logo4.png",
         },
       ],
       cta: {
