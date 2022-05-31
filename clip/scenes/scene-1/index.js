@@ -1,8 +1,7 @@
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import html from "./index.html";
 import css from "!!raw-loader!./index.css";
-import { topMove, leftMove, scaleBig, opacity } from "../../library/index.js";
-
+import { leftMove, opacity, topMove, scaleBig } from "../../library/index.js";
 const template = (index) => {
   const clip = new HTMLClip({
     html,
@@ -17,6 +16,7 @@ const template = (index) => {
       info: `@initParams.slides[${index}]`,
     },
   });
+
   clip.addIncident(opacity(1, ".root", 1), 0);
   clip.addIncident(topMove("5%", ".title", 1000, "easeInOutQuint"), 0);
   clip.addIncident(leftMove("0%", ".bg", 3500), 0);

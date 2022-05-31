@@ -1,7 +1,7 @@
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import html from "./index.html";
 import css from "!!raw-loader!./index.css";
-import { topMove, leftMove, scaleBig, opacity } from "../../library/index.js";
+import { topMove, leftMove, opacity } from "../../library/index.js";
 
 const template = (index) => {
   const clip = new HTMLClip({

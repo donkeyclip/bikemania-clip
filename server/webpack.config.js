@@ -37,11 +37,10 @@ module.exports = {
 
   devServer: {
     host: "127.0.0.1",
-    port: 8090,
+    port: 8080,
     historyApiFallback: false,
     hot: true,
     static: path.join(__dirname),
     open: "https://code.donkeyclip.com",
   },
 };
-
