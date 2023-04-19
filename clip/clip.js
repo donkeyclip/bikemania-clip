@@ -1,4 +1,4 @@
-import { HTMLClip } from "@donkeyclip/motorcortex";
+import { HTMLClip, setCSSCore } from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "!!raw-loader!./clip.css";
 import initParams from "./initParams";
@@ -6,6 +6,8 @@ import scene1 from "./scenes/scene-1";
 import scene2 from "./scenes/scene-2";
 import scene3 from "./scenes/scene-3";
 import initParamsValidationRules from "./initParamsValidationRules";
+import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
+setCSSCore(AnimePluginDefinition.CSSEffect);
 
 export const clip = new HTMLClip({
   html,

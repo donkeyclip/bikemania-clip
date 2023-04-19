@@ -7,6 +7,11 @@ export const scaleBig = (selector, duration, easing = "linear") =>
           scale: 1,
         },
       },
+      initialValues: {
+        transform: {
+          scale: 0,
+        },
+      },
     },
     {
       selector,
